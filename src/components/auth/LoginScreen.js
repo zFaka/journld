@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 import {startGoogleLogin, startLoginEmailPass} from '../../actions/auth';
 import {useForm} from '../../hooks/useForm';
 
+    // email:'nandito@gmail.com', 
+    // password:'123456',
+
 export const LoginScreen = () => {
 
 
@@ -11,10 +14,10 @@ export const LoginScreen = () => {
 
     const {loading} = useSelector( state => state.ui);
 
-    const [formValues, handleInputChange] = useForm({
 
-        email:'nandito@gmail.com', 
-        password:'123456'
+    const [formValues, handleInputChange] = useForm({
+        email:'', 
+        password:''
     });
 
     const {email, password} = formValues;
