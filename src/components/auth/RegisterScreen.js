@@ -6,6 +6,11 @@ import {useDispatch, useSelector} from 'react-redux';
 import {delError, setError} from '../../actions/ui';
 import {startRegEmailPassName} from '../../actions/auth';
 
+//        name:'Henri', 
+//        email:'nandito@gmail.com', 
+//        password:'123456', 
+//        password2:'123456'
+
 export const RegisterScreen = () => {
 
 
